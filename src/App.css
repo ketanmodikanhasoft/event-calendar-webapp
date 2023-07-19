@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.calender-container {
+  margin: 0 auto;
+  max-width: 620px;
+  padding: 0 10px;
+}
+
+.rbc-timeslot-group {
+  font-size: 14px;
+  border-bottom: none !important;
+  min-height: 27px !important;
+}
+.rbc-timeslot-group:nth-child(odd) {
+  font-weight: 700;
+}
+.rbc-timeslot-group:nth-child(even) {
+  font-size: 14px;
+  color: #b5b5b5;
+  display: inline-block;
+}
+
+.rbc-events-container > .rbc-event {
+  border: 1px solid #ccc !important;
+  background: #fff;
+  border-radius: 0;
+  border-left: 6px solid blue !important;
+  color: #000;
+  padding-top: 6px;
+}
+
+.rbc-time-content {
+  padding-right: 10px;
+  background: #eae7e7;
+}
+.rbc-day-slot {
+  margin-left: 10px;
+}
+
+.rbc-events-container {
+  background: #eae7e7;
+  margin-right: 0 !important;
+  border-left: 0 !important;
+}
+
+.rbc-time-column {
+  background: #fff;
+}
+.rbc-event-label {
+  font-size: 8px !important;
+  color: #817e7e;
+}
+
+.rbc-event-content {
+  color: #097ae3;
+  font-size: 14px;
+}
+
+.rbc-toolbar,
+.rbc-time-header,
+.rbc-current-time-indicator {
+  display: none !important;
+}
+
+.rbc-calendar {
+  height: 800px;
+}
+
+.title {
+  color: #097ae3;
+  font-weight: 500;
+}
+
+.description {
+  color: #ddd;
+}
+
+.rbc-label {
+  position: relative;
+  top: -4px;
+}
